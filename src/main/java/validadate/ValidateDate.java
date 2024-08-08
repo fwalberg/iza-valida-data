@@ -4,25 +4,24 @@ import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 
 /**
- * Classe de utilitário para validação de intervalo de datas.
+ * Classe utilitaria para validação de intervalo de datas.
  * 
  * @author Walberg Santos
  * @version 1.0
  * 
- * @see ValidateDateTest
+ * @see src/test/java/ValidateDateTest
  */
 
 public class ValidateDate {
 	
 	 /**
 	 *
-	 * @param startDate - Data inicial.
-	 * @param endDate - Data final.
+	 * @param startDate - data inicial.
+	 * @param endDate - data final.
 	 * @return {@code true} se as datas forem válidas, {@code false} caso contrário.
-	 * @throws IllegalArgumentException - Se qualquer uma das datas for nula,
-	 *                                    se a data inicial for posterior à data final,
-	 *                                    ou se o intervalo entre as datas for superior a 30 dias.
-	 * @see LocalDate
+	 * @throws IllegalArgumentException se qualquer das datas for nula,
+	 *                                  data inicial for posterior à data final ou
+	 *                                  intervalo entre datas superior a 30 dias.
 	 */
 
 	public static Boolean validate(LocalDate startDate, LocalDate endDate) {
